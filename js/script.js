@@ -37,14 +37,6 @@ setInterval(draw, 20);
 window.addEventListener("resize", () => location.reload());
 
 
-
-//LOADING AFTER
-setTimeout(function() {
-    document.querySelector('main').style.display = 'block';
-}, 3000);
-
-
-
 //TYPEWRITING EFFECT
 function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -83,4 +75,7 @@ const writeLoop = async () => {
 
 writeLoop();
 
-
+// LOADING AFTER
+setTimeout(function(){
+    document.querySelector('main').style.display = 'block';
+}, 3500);
